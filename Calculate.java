@@ -32,7 +32,6 @@ public class Main
         String str = null;
         char symbol = ' ';
         boolean stopper = false;
-		
 	while(!stopper)
 		{
 	        while(!stopper)
