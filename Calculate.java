@@ -28,7 +28,7 @@ public class Main
 	public static void main(String[] args) throws Exception {
 	    Scanner in = new Scanner(System.in);
 		System.out.println("Calculate 1.0 by Denis S :-)\n");
-      	double a=0,b=0,res,i=0;
+      	double a=0,b=0,i=0;
         String str = null;
         char symbol = ' ';
         boolean stopper = false;
@@ -72,7 +72,7 @@ public class Main
                 }
 	        } 
 	   stopper = false; // Zaciklivaem snova, esli vse @ok	   
-	        System.out.println("Result of A "+symbol+" B= "+String.format("%.2f", calculate(a,b,symbol)));
+	        System.out.println("Result of A "+symbol+" B = "+String.format("%.2f", calculate(a,b,symbol)));
 		    if(i>=1) {
 		    System.out.println("You want to stop calculate? Type y/n ");
 		    symbol = in.next().charAt(0);
