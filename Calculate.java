@@ -25,27 +25,29 @@ public class Main
         }
         return res;
     }
-  
-	public static void main(String[] args) throws Exception {
-	    Scanner in = new Scanner(System.in);
-		System.out.println("Calculate 1.0 by Denis S :-)\n");
+  	public static void main(String[] args) throws Exception {
+	Scanner in = new Scanner(System.in);
+	System.out.println("Calculate 1.0 by Denis S :-)\n");
       	double a=0,b=0,i=0;
         String str = null;
         char symbol = ' ';
         boolean stopper = false;
-		while(!stopper)
+		
+	while(!stopper)
 		{
 	        while(!stopper)
 	        {
 	        System.out.print("Type A: ");
-                try{
+                try
+		{
                     str = in.next();
                     a = Float.parseFloat(str);
                     stopper = true;
                 }
-                catch(Exception e){
+                catch(Exception e)
+		{
                     System.out.print("Incorrect! Need a number. ");		    
-		        }
+		}
 	        }
 	   stopper = false; // Zaciklivaem snova, esli vse @ok
 	        while(!stopper)
@@ -58,7 +60,7 @@ public class Main
                 }
                 catch(Exception e){
                     System.out.print("Incorrect! Need a number. ");
-		        }
+		}
 	        }
 	   stopper = false; // Zaciklivaem snova, esli vse @ok
 	         while(!stopper)
@@ -80,7 +82,7 @@ public class Main
 		    switch(symbol){
 		        case 'y':
 		        stopper=true;
-		        System.out.println("Stopped!");
+		        System.out.println("Calculator stopped!");
 		        break;
 		        case 'n':
 		        System.out.println("Well. Going further :-)");
