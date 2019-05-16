@@ -20,7 +20,7 @@ public class Main
             res = a-b;
             break;
             default:
-	    res = 0;
+            res=0;
             break;
         }
         return res;
@@ -44,7 +44,7 @@ public class Main
                     stopper = true;
                 }
                 catch(Exception e){
-                    System.out.print("Incorrect! Need a number. "); 		    
+                    System.out.print("Incorrect! Need a number. ");		    
 		        }
 	        }
 	   stopper = false; // Zaciklivaem snova, esli vse @ok
@@ -57,7 +57,7 @@ public class Main
                     stopper = true;
                 }
                 catch(Exception e){
-                    System.out.print("Incorrect! Need a number. "); 		    
+                    System.out.print("Incorrect! Need a number. ");
 		        }
 	        }
 	   stopper = false; // Zaciklivaem snova, esli vse @ok
@@ -69,13 +69,13 @@ public class Main
                 if (symbol == '*' || symbol == '/' || symbol == '+' || symbol == '-' || symbol == ':') {
                     stopper = true;
                 } else {
-                    System.out.print("Incorrect! ");                    
+                    System.out.print("Incorrect! ");
                 }
-	        } 
-	   stopper = false; // Zaciklivaem snova, esli vse @ok	   
-	        System.out.println("Result of A "+symbol+" B = "+String.format("%.2f", calculate(a,b,symbol)));
+	        }
+	   stopper = false; // Zaciklivaem snova, esli vse @ok
+	        System.out.println("Result of "+String.format("%.2f",a)+symbol+String.format("%.2f",b)+"="+String.format("%.2f", calculate(a,b,symbol))+"\n");
 		    if(i>=1) {
-		    System.out.println("You want to stop calculate? Type y/n ");
+		    System.out.print("You want to stop calculate? Type y/n : ");
 		    symbol = in.next().charAt(0);
 		    switch(symbol){
 		        case 'y':
@@ -90,7 +90,7 @@ public class Main
 		        break;
 		        }
 		    }
-		i++;        
+		i++;
 		}
 	}
 }
