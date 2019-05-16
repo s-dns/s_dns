@@ -20,6 +20,7 @@ public class Main
             res = a-b;
             break;
             default:
+	    res = 0;
             break;
         }
         return res;
